@@ -1,0 +1,67 @@
+.top{
+    width: 100%;
+    height: 620px;
+    background-image: url(images2/sl_bg.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+img.layer1{
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    bottom: -3%;
+    left: 0;
+    opacity: 0;
+    animation: len 1s forwards;
+}
+
+@keyframes len{
+    0%{opacity: 0; transform: translateY(200px);}
+    100%{opacity: 1; transform: translateY(0px);}
+}
+img.layer2{
+    position: absolute;
+    z-index: 2;
+    right: 17%;
+    bottom: 0%;
+    width: 550px;
+    opacity: 0;
+    animation: cogai 1s forwards;
+    animation-delay: 0.8s;
+}
+
+@keyframes cogai{
+    0%{opacity: 0; transform: translateY(5%);}
+    100%{opacity: 1; transform: translateY(0);}
+}
+img.layer3{
+    position: absolute;
+    z-index: 1;
+    right: 10%;
+    bottom: 30%;
+}
+img.layer4{
+    position: absolute;
+    z-index: 1;
+    right: 10%;
+    bottom: 30%;
+}
+img.layer5{
+    position: absolute;
+    z-index: 1;
+    right: 16%;
+    bottom: 6%;
+    width: 46%;
+}
+
+.text1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    z-index: 5;
+}

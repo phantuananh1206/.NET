@@ -1,0 +1,65 @@
+.main
+{
+    width: 1080px;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+body
+{
+    background-size: 100%;
+    background-color: white;
+}
+
+.main img
+{
+    margin-bottom: -4px;
+    width: 100%;
+}
+
+.ListProduct
+{
+    background: white;
+    width: unset;
+    max-height: 365px;
+    display: flex;
+    border-left: 10px solid blue;
+    border-right: 10px solid blue;
+    border-bottom: 10px solid blue;
+}
+
+.product
+{
+    width: 180px;
+    background-color: white;
+}
+
+.product img{
+    width: 165px;
+    height: 180px;
+    transition: 0.5s;
+}
+
+.product img:hover{
+    transform: scale(1.2);
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+
+p{
+    color: black;
+}
+
+span{
+    color: rgba(255, 0, 0, 0.904);
+    font-weight: bold;
+}
+
+.linethough{
+    text-decoration: line-through;
+    display: inline-block;
+    color: gray;
+}
+

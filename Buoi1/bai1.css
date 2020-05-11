@@ -1,0 +1,52 @@
+#main
+{
+    width: 900px;
+}
+#top
+{
+    width: 900px;
+    float: left;
+}
+img
+{
+    float: left;
+    width: 500px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+a
+{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+a:hover
+{
+    color: cadetblue;
+}
+p
+{
+    font-size: 14px;
+}
+#bottom
+{  
+    clear: both;
+    width: 900px;
+}
+#left
+{
+    float: left;
+    width: 270px;
+}
+
+#right
+{
+    float: right;
+    width: 270px;   
+}
+p
+{
+    text-align: justify;
+}
+
+
