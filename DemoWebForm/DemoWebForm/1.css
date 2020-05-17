@@ -1,0 +1,9 @@
+﻿body {
+    text-align: center;
+    background-color: pink;
+}
+#abc{
+    width: 400px;
+    background-color: violet;
+    border: 2px solid blue;
+}
