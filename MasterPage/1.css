@@ -1,0 +1,63 @@
+﻿body {
+    background: url(images/chem.jpg) repeat repeat-y center fixed;
+    /*background-color: pink;*/
+    padding: 0px;
+    margin: 10px;
+    font-family: Verdana;
+    font-size: 12px
+}
+
+#outer{
+    width: 960px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+#header{
+    height: 100px;
+    width: 960px;
+    background-color: yellow;
+    position: fixed;
+    z-index: 10;
+}
+
+#content{
+    padding-top: 200px;
+    min-height: 460px;
+    width: 600px;
+    float: left;
+}
+
+#right{
+    padding-top: 200px;
+    min-height: 460px;
+    width: 350px;
+    float: right;
+    background-color: green;
+}
+
+#footer{
+    height: 50px;
+    background-color: aqua;
+    clear: both;
+    text-align: center;
+}
+
+#menu{
+    height: 30px;
+    width: 960px;
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+#menu a{
+    display: inline-block;
+    color: white;
+    margin: 4px;
+    padding: 2px 10px;
+    font-variant: small-caps;
+    text-decoration: none;
+    border: 1px solid black;
+}

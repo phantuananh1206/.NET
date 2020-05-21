@@ -74,7 +74,9 @@
                     <asp:Label ID="lblHienThi" runat="server" ForeColor="Red"></asp:Label>
                 </td>
                 <td class="auto-style6">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+                </td>
             </tr>
         </table>
     </div>
