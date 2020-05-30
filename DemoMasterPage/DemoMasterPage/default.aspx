@@ -22,7 +22,7 @@
                     </div>
                     <div style="float: right">
                         <asp:LinkButton ID="btnEN" runat="server">English</asp:LinkButton>
-                        <asp:LinkButton ID="btnVN" runat="server">Tiếng Việt</asp:LinkButton>
+                        <asp:LinkButton ID="btnVN" runat="server">Tiếng Việt</asp:LinkButton>                     
                     </div>
                 </div>
             </div>
