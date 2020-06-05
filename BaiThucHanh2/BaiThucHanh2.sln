@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiThucHanh2", "BaiThucHanh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoDB", "..\DemoDB\DemoDB\DemoDB.csproj", "{1B963C74-3853-4BD5-BA9C-36808828D84A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoMasterPage", "..\DemoMasterPage\DemoMasterPage\DemoMasterPage.csproj", "{7323DC26-C7B2-4CD3-8228-4F138AF50100}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KiemLoiTuyBien", "..\KiemLoiTuyBien\KiemLoiTuyBien\KiemLoiTuyBien.csproj", "{AF82BC36-2918-4509-B859-3185E2EB0E5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{1B963C74-3853-4BD5-BA9C-36808828D84A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B963C74-3853-4BD5-BA9C-36808828D84A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B963C74-3853-4BD5-BA9C-36808828D84A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7323DC26-C7B2-4CD3-8228-4F138AF50100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7323DC26-C7B2-4CD3-8228-4F138AF50100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7323DC26-C7B2-4CD3-8228-4F138AF50100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7323DC26-C7B2-4CD3-8228-4F138AF50100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF82BC36-2918-4509-B859-3185E2EB0E5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF82BC36-2918-4509-B859-3185E2EB0E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF82BC36-2918-4509-B859-3185E2EB0E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF82BC36-2918-4509-B859-3185E2EB0E5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

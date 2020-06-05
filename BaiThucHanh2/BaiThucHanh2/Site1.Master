@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="BaiThucHanh2.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="container">
+            <header>
+                Header
+            </header>
+            <div id="main">
+                <div id="menu">
+                    <asp:HyperLink ID="HyperLink1" runat="server">TRANG CHỦ</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink2" runat="server">SẢN PHẨM</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink3" runat="server">KHUYẾN MÃI</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink4" runat="server">TIN TỨC</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink5" runat="server">LIÊN HỆ</asp:HyperLink>
+                </div>
+                <div id="bottom">
+                    <div id="left">
+                        <asp:Label ID="Label1" runat="server" Text="Danh sách loại hàng" ForeColor="Red"></asp:Label>
+                        <asp:RadioButtonList ID="rdlLoaiHang" runat="server" AutoPostBack="True" NavigateUrl="~/Webform1.aspx" OnSelectedIndexChanged="rdlLoaiHang_SelectedIndexChanged"></asp:RadioButtonList>
+                    </div>
+                    <div id="right">
+                        <asp:Login ID="Login1" runat="server" OnAuthenticate="Login1_Authenticate"></asp:Login>
+                    </div>
+                    <div id="mid">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                Copyright Phan Tuấn Anh
+            </footer>
+        </div>
+
+    </form>
+</body>
+</html>
