@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="pageUser.Master.cs" Inherits="WebQUANLYBANHANG4._0.MasterUser" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            width: 888px;
+            height: 443px;
+        }
+        .auto-style3 {
+            height: 28px;
+        }
+        .auto-style4 {
+            height: 443px;
+            width: 243px;
+        }
+        .auto-style6 {
+            width: 963px;
+            height: 503px;
+        }
+        .auto-style7 {
+            width: 1099px;
+            height: 350px;
+        }
+        .auto-style8 {
+            height: 443px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="width: 957px">
+    </div>
+        <table border="2" class="auto-style6">
+            <tr>
+                <td class="auto-style3" colspan="3">
+                    <img class="auto-style7" src="IMAGES/BiaOnline.jpg" /></td>
+            </tr>
+            <tr>
+                <td class="auto-style8" style="vertical-align: top ">
+                    <asp:Repeater ID="Repeater1" runat="server">
+                        <ItemTemplate>
+                          <a href ="pageDANHSACHSANPHAM.aspx?madanhmuc=<%# Eval("IDMADM") %>"> 
+                                 <%# Eval("TENDM") %>
+                              </a>
+                            <br />
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </td>
+                <td class="auto-style2" style="vertical-align: top">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+                <td class="auto-style4" style="vertical-align: top">
+                    <asp:Login ID="Login1" runat="server" Height="142px" LoginButtonText="Đăng nhập" OnAuthenticate="Login1_Authenticate" PasswordLabelText="Mật khẩu" RememberMeText="Ghi nhớ lần sau" style="margin-left: 2px" TitleText="Đăng Nhập" UserNameLabelText="Tài Khoản" Width="271px">
+                    </asp:Login>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">Coppy Right @</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

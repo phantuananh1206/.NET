@@ -90,5 +90,6 @@ namespace DemoThemSuaXoa
             grvLoaiHang.DataSource = xuLyDuLieu.bangDuLieu("select * from LoaiHang");
             grvLoaiHang.DataBind();
         }
+
     }
 }

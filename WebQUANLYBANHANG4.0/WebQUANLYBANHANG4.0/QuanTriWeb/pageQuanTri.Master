@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="pageQuanTri.master.cs" Inherits="WebQUANLYBANHANG4._0.QuanTriWeb.pageQuanTri" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style3 {
+            
+            height: 28px;
+        }
+        .auto-style4 {
+            height: 200px;
+            width: 247px;
+        }
+        .auto-style5 {
+            width: 1004px;
+            height: 358px;
+        }
+        .auto-style7 {
+            width: 270px;
+        }
+        .auto-style9 {
+            height: 200px;
+            width: 1249px;
+        }
+        .auto-style10 {
+            width: 960px;
+        }
+        .auto-style11 {
+            margin-left: 2px;
+        }
+        .auto-style12 {
+            height: 443px;
+            width: 400px;
+        }
+        .auto-style13 {
+            width: 981px;
+        }
+    </style>
+</head>
+<body style="height: 0px">
+    <form id="form1" runat="server">
+    <div class="auto-style13">
+        
+    <table border="2" style="margin-bottom: 0px;" class="auto-style10">
+        <tr>
+            <td colspan="3">
+                <img class="auto-style5" src="../IMAGES/manage.png" /></td>
+        </tr>
+        <tr>
+            <td class="auto-style12" style="vertical-align: top">
+                <asp:Repeater ID="Repeater1" runat="server">
+                    <ItemTemplate>
+
+                    </ItemTemplate>
+                </asp:Repeater>
+            </td>
+            <td class="auto-style9" style="vertical-align: top">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            <p class="auto-style7">
+            </p>
+        
+        </asp:ContentPlaceHolder>
+            </td>
+            <td class="auto-style4" style ="vertical-align: top">
+                <asp:Login ID="Login1" runat="server" Width="242px" CssClass="auto-style11" Height="125px" >
+                </asp:Login>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style3" colspan="3">&nbsp;</td>
+        </tr>
+    </table>
+    </div>
+    </form>
+    </body>
+</html>

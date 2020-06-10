@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="QuanLyBanHang.master.cs" Inherits="QuanLyBanHang.QuanLyBanHang" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style3 {
+            height: 151px;
+        }
+        .auto-style4 {
+            width: 545px;
+            height: 151px;
+        }
+        .auto-style5 {
+            height: 26px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td colspan="3">
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/images/tuananh.jpg" Width="1063px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3" style="vertical-align: top">
+                    <asp:DataList ID="DataList1" runat="server">
+                        <ItemTemplate>
+                            <asp:LinkButton ID="LinkButton1" runat="server" Text='<%# Eval("TenLoai") %>' CommandArgument='<%# Eval("MaLoai") %>'  OnClick="LinkButton1_Click">LinkButton</asp:LinkButton>
+                        </ItemTemplate>
+                    </asp:DataList>
+                </td>
+                <td class="auto-style4" style="vertical-align: top">&nbsp;
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td class="auto-style3" style="vertical-align: top">
+                    <asp:Login ID="Login1" runat="server" OnAuthenticate="Login1_Authenticate">
+                    </asp:Login>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style5" style="text-align: center" colspan="3">@Copyright Phan Tuấn Anh</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

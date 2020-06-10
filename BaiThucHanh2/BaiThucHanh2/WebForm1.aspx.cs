@@ -21,8 +21,11 @@ namespace BaiThucHanh2
             else
             {
                 string maloai = Context.Items["ml"].ToString();
-                q = "select * from MatHang where MaLoai = '" + maloai + "'"; }
-            try { SqlDataAdapter da = new SqlDataAdapter(q, connectionString);
+                q = "select * from MatHang where MaLoai = '" + maloai + "'";
+            }
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter(q, connectionString);
                 DataTable dt = new DataTable(); da.Fill(dt);
                 this.DataList1.DataSource = dt; this.DataList1.DataBind();
             }
