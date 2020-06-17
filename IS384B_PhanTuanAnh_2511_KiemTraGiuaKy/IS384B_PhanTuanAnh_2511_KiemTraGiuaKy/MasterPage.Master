@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="IS384B_PhanTuanAnh_2511_KiemTraGiuaKy.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="1.css" rel="stylesheet" />
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+
+        .auto-style2 {
+            height: 26px;
+        }
+
+        .auto-style3 {
+            width: 248px;
+        }
+
+        .auto-style4 {
+            height: 26px;
+            width: 487px;
+        }
+
+        .auto-style5 {
+            width: 487px;
+        }
+
+        .auto-style6 {
+            margin-left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td colspan="3">
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/tuananh.jpg" Width="1064px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <asp:LinkButton class="menu" runat="server">TRANG CHỦ</asp:LinkButton>
+                        <asp:LinkButton class="menu" runat="server">GIỚI THIỆU</asp:LinkButton>
+                        <asp:LinkButton class="menu" runat="server">SÁCH TIẾNG VIỆT </asp:LinkButton>
+                        <asp:LinkButton class="menu" runat="server">SÁCH TIẾNG ANH</asp:LinkButton>
+                        <asp:LinkButton class="menu" runat="server">SONG NGỮ</asp:LinkButton>
+                        <asp:LinkButton class="menu" runat="server">LIÊN HỆ</asp:LinkButton>
+                        <input type="text" placeholder="Search ..." />
+                        <asp:Button ID="Button1" runat="server" Text="TÌM KIẾM" />
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="auto-style3">
+                        <asp:DataList ID="dtlLoaiSach" runat="server">
+                            <ItemTemplate>
+                                <asp:LinkButton ID="lbtnLoaiSach" runat="server" Text='<%# Eval("TenLoai") %>' CommandArgument='<%# Eval("MaLoai") %>' OnClick="lbtnLoaiSach_Click"></asp:LinkButton>
+                            </ItemTemplate>
+                        </asp:DataList>
+                    </td>
+                    <td class="auto-style4">
+                        <asp:Label ID="lblNgayThangNam" runat="server"></asp:Label>
+                    </td>
+                    <td class="auto-style2">PHẦN PHỤ GIỚI THIỆU<br />
+                        SÁCH BÁN CHẠY<br />
+                        SÁCH GIẢM GIÁ<br />
+                        SÁCH MỚI</td>
+                </tr>
+                <tr>
+                    <td class="auto-style5">&nbsp;
+                           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                           </asp:ContentPlaceHolder>
+                    </td>
+                    <td>
+                        <asp:Login ID="Login1" runat="server" CssClass="auto-style6" OnAuthenticate="Login1_Authenticate">
+                        </asp:Login>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2" colspan="3">&nbsp;
+                    <div class="footer">
+                        Thông tin về bản quyền Website
+                        <br />
+                        Phan Tuấn Anh - 2321122511
+                    </div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </form>
+</body>
+</html>

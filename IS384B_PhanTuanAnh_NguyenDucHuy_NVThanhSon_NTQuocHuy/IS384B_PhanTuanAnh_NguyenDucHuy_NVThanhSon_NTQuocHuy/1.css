@@ -1,0 +1,86 @@
+﻿body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    /* background-color: #f5f5f5; */
+    background-image: url('https://previews.123rf.com/images/dmitriisimakov/dmitriisimakov2004/dmitriisimakov200401142/144256291-library-of-many-different-books-on-a-red-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header
+{
+    width: 100%;
+    padding: 0;
+}
+/* css for banner */
+header .banner
+{
+    font-weight: normal;
+    background-image: url('https://www.gdmcollege.org/images/library-banner-img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5rem 0;
+    width: 100%;
+}
+/* css for navbar */
+header .nav
+{
+    background-color: #D1282F;
+    width: 100%;
+    border-bottom: 0.75rem solid aliceblue;
+}
+
+header .nav ul 
+{
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+}
+
+header .nav ul li 
+{
+    display: inline;
+    padding: 1rem;
+}
+
+header .nav ul li a 
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header .nav ul li:hover
+{
+    background-color: #EA3D44;
+}
+
+/* css for main */
+main .container
+{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    grid-gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#Login1{
+    float: right;
+}
+
+/* Css for footer */
+footer
+{
+    background-color: #D1282F;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: bold;
+}

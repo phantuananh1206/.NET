@@ -6,12 +6,13 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace QuanLyBanHang
 {
     public partial class QuanLyBanHang : System.Web.UI.MasterPage
     {
-        String connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\IS384_ASP\QuanLyBanHang\QuanLyBanHang\App_Data\dbQuanLyBanHang.mdf;Integrated Security=True";
+        String connectionString = ConfigurationManager.ConnectionStrings["connect"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Page.IsPostBack) return;
@@ -49,6 +50,7 @@ namespace QuanLyBanHang
             if (table.Rows.Count != 0)
             {
                 Response.Cookies["TenDangNhap"].Value = ten;
+                Response.Write("<script>alert('Đăng nhập thành công')</script>");
                 Server.Transfer("DanhSachSanPham.aspx");
             }
             else
@@ -59,8 +61,8 @@ namespace QuanLyBanHang
 
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
-            String MaLoai = ((LinkButton)sender).CommandArgument;
-            Context.Items["m1"] = MaLoai;
+            string MaLoai = ((LinkButton)sender).CommandArgument;
+            Context.Items["ml"] = MaLoai;
             Server.Transfer("DanhSachSanPham.aspx");
         }
     }

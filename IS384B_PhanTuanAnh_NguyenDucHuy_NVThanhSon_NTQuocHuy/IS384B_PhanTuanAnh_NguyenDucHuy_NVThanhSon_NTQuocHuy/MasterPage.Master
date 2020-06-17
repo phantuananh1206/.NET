@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="IS384B_PhanTuanAnh_NguyenDucHuy_NVThanhSon_NTQuocHuy.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        
+        .auto-style3 {
+            width: 100%;
+        }
+        .auto-style4 {
+            width: 541px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style3">
+            <tr>
+                <td>&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top">
+                    <asp:DataList ID="dtlLoaiSach" runat="server" Width="176px">
+                        <ItemTemplate>
+                            <asp:LinkButton ID="lbtnLoaiSach" runat="server" Text='<%# Eval("TenLoai") %>' CommandArgument='<%# Eval("MaLoai") %>' OnClick="lbtnLoaiSach_Click1"></asp:LinkButton>
+                        </ItemTemplate>
+                    </asp:DataList>
+                </td>
+                <td class="auto-style4" style="vertical-align: top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td style="vertical-align: top">
+                    <asp:Login ID="Login1" runat="server" OnAuthenticate="Login1_Authenticate">
+                    </asp:Login>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

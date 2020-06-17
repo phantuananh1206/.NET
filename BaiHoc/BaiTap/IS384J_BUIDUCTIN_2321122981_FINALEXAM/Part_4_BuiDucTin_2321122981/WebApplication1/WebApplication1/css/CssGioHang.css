@@ -1,0 +1,28 @@
+﻿.top{
+    margin-bottom:50px;
+    text-align:center;
+}
+
+.image {
+    width: 100px;
+    height: auto;
+}
+.gridview{
+    text-align:center;
+}
+.bottom{
+    float:right;
+    margin-top:50px;
+    height:70px;
+}
+.one{
+    margin-top:0;
+    margin-left:50px;
+}
+.more{
+    margin-top:50px;
+    text-align:center;
+    border:1px solid black;
+    width:400px;
+    padding:5px 5px;
+}

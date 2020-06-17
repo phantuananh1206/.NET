@@ -1,0 +1,47 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+.outer {
+    height: 500px;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.left {
+    width: 20%;
+    height: 400px;
+    float: left;
+}
+
+.center {
+    width: 60%;
+    height: 400px;
+    float: left;
+}
+
+.right {
+    width: 20%;
+    height: 400px;
+    float: right;
+}
+
+.box {
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.textbox {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 7px;
+}
+
+.btn {
+    margin-bottom: 20px;
+}

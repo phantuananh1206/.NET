@@ -1,0 +1,35 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main {
+    width: 1160px;
+
+    margin: 0 auto;
+}
+#content{
+    width: 960px;
+    min-height: 200px;
+    height: auto;
+    flex: auto;
+    background-color:#e2c141; 
+}
+
+    #left{
+        width:15%;      
+         background-color:#e2c141;    
+         min-height: 200px;  
+        height:auto;      
+        float:left;      
+        font-size: 20px;
+    }
+
+    #right{
+         width: 25%;     
+        background-color:#e2c141;     
+        min-height: 200px;
+        height: auto;    
+        float: right;     
+    }
+    

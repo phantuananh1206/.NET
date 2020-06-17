@@ -98,8 +98,26 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="1.css" />
+    <Content Include="2.css" />
     <Content Include="default.aspx" />
+    <Content Include="images\7thoiquen.jpg" />
+    <Content Include="images\cudiroiseden.jfif" />
+    <Content Include="images\dacnhantam.jpg" />
+    <Content Include="images\dayconlamgiau.jfif" />
+    <Content Include="images\dell.jpg" />
+    <Content Include="images\huawei.jpeg" />
+    <Content Include="images\kheoannoi.jpg" />
+    <Content Include="images\macbookpro.jpg" />
+    <Content Include="images\motlitnuocmat.jpg" />
+    <Content Include="images\msi.jpg" />
+    <Content Include="images\nhungtamlongcaoca.jpg" />
+    <Content Include="images\nuoidaycon.jfif" />
+    <Content Include="images\samsung1.jpg" />
+    <Content Include="images\samsung2.png" />
+    <Content Include="images\samsungA50.jpg" />
+    <Content Include="images\toituhoc.png" />
+    <Content Include="images\tuduyphanbien.jpg" />
+    <Content Include="images\vocungtannhanyeuthuong.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -171,6 +189,7 @@
     <Compile Include="QuanLyBanHang.Master.designer.cs">
       <DependentUpon>QuanLyBanHang.Master</DependentUpon>
     </Compile>
+    <Compile Include="XuLyDuLieu.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

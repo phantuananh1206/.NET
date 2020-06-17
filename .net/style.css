@@ -1,0 +1,252 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    /* background-color: #f5f5f5; */
+    background-image: url('https://previews.123rf.com/images/dmitriisimakov/dmitriisimakov2004/dmitriisimakov200401142/144256291-library-of-many-different-books-on-a-red-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header
+{
+    width: 100%;
+    padding: 0;
+}
+/* css for banner */
+header .banner
+{
+    font-weight: normal;
+    background-image: url('https://www.gdmcollege.org/images/library-banner-img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5rem 0;
+    width: 100%;
+}
+/* css for navbar */
+header .nav
+{
+    background-color: #D1282F;
+    width: 100%;
+    border-bottom: 0.75rem solid aliceblue;
+}
+
+header .nav ul 
+{
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+}
+
+header .nav ul li 
+{
+    display: inline;
+    padding: 1rem;
+}
+
+header .nav ul li a 
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header .nav ul li:hover
+{
+    background-color: #EA3D44;
+}
+
+/* css for main */
+main .container
+{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    grid-gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+/* css for sidebar */
+main .container .sidebar
+{
+    background-color: #f5f5f5;
+    width: 100%;
+}
+
+main .container .sidebar .list 
+{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+main .container .sidebar .list .title
+{
+    border-bottom: 1px solid #f5f5f5;
+    background-color: #D1282F;
+}
+
+main .container .sidebar .list .title h3 
+{
+    text-align: center;
+    color: white;
+}
+
+main .container .sidebar .list .item ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+main .container .sidebar .list .item ul li
+{
+    padding: 1rem ;
+    border-bottom: 1px solid #D1282F;
+}
+
+main .container .sidebar .list .item ul li:hover
+{
+    background-color: #EA3D44;
+}
+
+main .container .sidebar .list .item ul li a
+{
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* css for content */
+main .container .content
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 0.5rem;
+    background-color: #f5f5f5;
+}
+
+main .container .content .item_pro
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 0.5rem;
+    background-color: #ffffff;
+}
+
+main .container .content .item_pro:hover
+{
+    box-shadow: 0.2rem 0.4rem 0.2rem #EA3D44;
+}
+
+main .container .content .item_pro .img img
+{
+    width: 80%;
+    margin: 10%;
+}
+
+main .container .content .item_pro .descrip
+{
+    margin-left: 5%;
+    font-family: cursive;
+}
+
+main .container .content .item_pro .price
+{
+    color:#d0171f;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+main .container .content .item_pro button
+{
+    padding: 0.5rem 1rem;
+    outline: none;
+    background-color: #D1282F;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    border: none;
+}
+
+main .container .content .item_pro button:hover
+{
+    background-color: #EA3D44;
+}
+
+/* css for form */
+main .container .form
+{
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+main .container .form h1
+{
+    text-align: center;
+    color: #fff;
+    font-family: cursive;
+    background-color: #D1282F;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+main .container .form .input-group
+{
+    padding: 1rem;
+}
+
+main .container .form .input-group label
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main .container .form .input-group input
+{
+    padding: 0.5rem 1rem;
+    width: 80%;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #D1282F;
+    font-size: 17px;
+}
+
+main .container .form .input-group button
+{
+    width: 50%;
+    padding: 0.75rem 1rem;
+    margin: 0px 25%;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    background-color:#D1282F;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+main .container .form .input-group button:hover
+{
+    background-color: #EA3D44;
+}
+
+/* Css for footer */
+footer
+{
+    background-color: #D1282F;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: bold;
+}
