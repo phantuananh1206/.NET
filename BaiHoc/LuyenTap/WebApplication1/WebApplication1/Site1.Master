@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td colspan="3">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:DataList ID="DataList1" runat="server">
+                            <ItemTemplate>
+                                <asp:LinkButton ID="lbtnLoaiHang" runat="server" Text='<%#Eval("TenLoai") %>' CommandArgument='<%#Eval("MaLoai") %>' OnClick="lbtnLoaiHang_Click">LinkButton</asp:LinkButton>
+                            </ItemTemplate>
+                        </asp:DataList>
+                    </td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td>
+                        <asp:Login ID="Login1" runat="server" OnAuthenticate="Login1_Authenticate">
+                        </asp:Login>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">&nbsp;</td>
+                </tr>
+            </table>
+
+        </div>
+    </form>
+</body>
+</html>

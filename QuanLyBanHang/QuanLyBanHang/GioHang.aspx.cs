@@ -26,12 +26,17 @@ namespace QuanLyBanHang
             GridView1.DataSource = dt;
             GridView1.DataBind();
             double tong = 0;
-            for (int i = 0; i < dt.Rows.Count; i++  )
+            foreach(DataRow dataRow in dt.Rows)
             {
-                double thanhtien = Convert.ToDouble(dt.Rows[i]["SoLuong"]) * Convert.ToDouble(dt.Rows[i]["DonGia"]);
-                tong = tong + thanhtien;
+                double thanhtien = Convert.ToDouble(dataRow["SoLuong"]) * Convert.ToDouble(dataRow["DonGia"]);
+                  tong = tong + thanhtien;
             }
-            this.Label1.Text = "Tổng cộng: " + tong;
+            //for (int i = 0; i < dt.Rows.Count; i++  )
+            //{
+            //    double thanhtien = Convert.ToDouble(dt.Rows[i]["SoLuong"]) * Convert.ToDouble(dt.Rows[i]["DonGia"]);
+            //    tong = tong + thanhtien;
+            //}
+            this.Label1.Text = "Tổng tiền: " + tong;
         }
 
         protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
@@ -43,6 +48,7 @@ namespace QuanLyBanHang
                 if (dr["MaHang"].Equals(mahang))
                 {
                     dr.Delete();
+                    Response.Write("<script>alert('Xóa thành công!');</script>");
                     break;
                 }
             }
@@ -61,6 +67,7 @@ namespace QuanLyBanHang
                 {
                     dt.Rows[row.DataItemIndex]["SoLuong"] = Convert.ToInt32(soluong);
                     Response.Write("<script>alert('Sửa thành công!');</script>");
+                    Response.Redirect("GioHang.aspx");
                     break;
                 }
             }

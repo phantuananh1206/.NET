@@ -30,8 +30,8 @@ namespace QuanLyBanHang
                 SqlDataAdapter da = new SqlDataAdapter(q, connectionString);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
-                //this.DataList2.DataSource = dt;
-                //this.DataList2.DataBind();
+                this.DataList2.DataSource = dt;
+                this.DataList2.DataBind();
 
                 clPager.PageSize = 6;
                 clPager.DataSource = dt.DefaultView;

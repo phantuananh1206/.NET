@@ -60,8 +60,12 @@ namespace QuanLyBanHang
                 tendn = "";
             if (tendn == "")
             {
-                Response.Write("<script>alert('Chưa Đăng Nhập');</script>");
+                Response.Write("<script>alert('Chưa Đăng Nhập!');</script>");
                 return;
+            }
+            else
+            {
+                Response.Write("<script>alert('Mua hàng thành công!');</script>");
             }
             Button mua = (Button)sender;
             string maHang = mua.CommandArgument.ToString();

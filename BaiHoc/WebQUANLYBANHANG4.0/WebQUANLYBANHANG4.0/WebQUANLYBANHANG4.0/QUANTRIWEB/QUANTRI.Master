@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="QUANTRI.master.cs" Inherits="WebQUANLYBANHANG4._0.QUANTRIWEB.QUANTRI" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style6 {
+            width : 25%;
+            height: 446px;
+        }
+        .auto-style9 {
+            height: 157px;
+        }
+        .auto-style12 {
+            height: 446px;
+            width: 50%;
+        }
+        .auto-style13 {
+            width: 1270px;
+            height: 163px;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body style="height: 11px">
+    <form id="form1" runat="server">
+    <div>
+    </div>
+        <table border="1" style="width: 100%; height: 571px;">
+            <tr>
+                <td colspan="3" class="auto-style9">
+                    <img alt="" class="auto-style13" src="../IMAGES/bannerAdmin.jpg" /></td>
+            </tr>
+            <tr>
+                <td class="auto-style6" style="vertical-align: top">
+                    <asp:Menu ID="Menu1" runat="server">
+                        <Items>
+                            <asp:MenuItem Text="Hệ thống" Value="Hệ thống">
+                                <asp:MenuItem Text="Quản lý nhập" Value="Quản lý nhập">
+                                    <asp:MenuItem Text="Quản lý danh mục" Value="Quản lý danh mục"></asp:MenuItem>
+                                    <asp:MenuItem Text="Quản lý sản phẩm" Value="Quản lý sản phẩm"></asp:MenuItem>
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                <td class="auto-style12" style="vertical-align: top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1"  runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td class="auto-style6" style="vertical-align: top"></td>
+            </tr>
+            <tr>
+                <td colspan="3">&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

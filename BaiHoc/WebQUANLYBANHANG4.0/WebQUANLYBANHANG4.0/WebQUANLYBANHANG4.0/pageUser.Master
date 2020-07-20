@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="pageUser.Master.cs" Inherits="WebQUANLYBANHANG4._0.MasterUser" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 165px;
+            height: 443px;
+        }
+        .auto-style2 {
+            width: 582px;
+            height: 443px;
+        }
+        .auto-style3 {
+            height: 28px;
+        }
+        .auto-style4 {
+            height: 443px;
+            width: 244px;
+        }
+        .auto-style6 {
+            width: 963px;
+            height: 503px;
+        }
+        .auto-style7 {
+            width: 1300px;
+            height: 270px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="width: 957px">
+    </div>
+        <table border="1" class="auto-style6">
+            <tr>
+                <td class="auto-style3" colspan="3">
+                    <img alt="" class="auto-style7" src="IMAGES/bannerShop.png" /></td>
+            </tr>
+            <tr>
+                <td class="auto-style1" style="vertical-align: top">
+                    <asp:Repeater ID="Repeater1" runat="server" OnItemCommand="Repeater1_ItemCommand" >
+                        <ItemTemplate>
+                            <a href="pageDANHSACHSANPHAM.aspx?linkForID=<%#Eval("IDMADM")%>">
+                                 <%# Eval("TENDM") %>
+                            </a>
+                            <br>
+                        </ItemTemplate>
+                </asp:Repeater>
+                </td>
+                <td class="auto-style2" style="vertical-align: top">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+                <td class="auto-style4" style="vertical-align: top">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="3">Coppy Right @</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

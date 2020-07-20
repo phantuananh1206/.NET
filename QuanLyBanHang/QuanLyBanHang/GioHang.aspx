@@ -16,11 +16,6 @@
             </asp:TemplateField>
             <asp:BoundField DataField="DonGia" ReadOnly="True" HeaderText="Đơn giá" />
             <asp:BoundField DataField="SoLuong" HeaderText="Số lượng" />
-            <asp:TemplateField HeaderText="Xóa">
-                <ItemTemplate>
-                    <asp:Button ID="Button1" runat="server" Text="Xóa" />
-                </ItemTemplate>
-            </asp:TemplateField>
             <asp:CommandField ButtonType="Button" ShowDeleteButton="True" ShowEditButton="True" />
         </Columns>
     </asp:GridView>
